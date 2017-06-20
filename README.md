@@ -23,4 +23,6 @@ Obviously, you can give it whatever version and env name and it will transform y
 
 To run the tests: 
 
+```
  mono Tools/FAKE/tools/FAKE.exe Code/demo-build.fsx run-tests
+ ```
