@@ -17,11 +17,9 @@ Target "clean" (fun _ -> CleanDir buildDir)
 
 
 Target "prepare-build" (fun () ->
-    Fake.TraceHelper.log ("--------------- Started Preparing the Build ---------------")      
-    Fake.TraceHelper.log (String.Format("Preparing the Build for Environment: '{0}' , and Version: '{1}'", env, version))
+    trace (String.Format("Preparing the Build for Environment: '{0}' , and Version: '{1}'", env, version))
     updateAppSetting "EnvName" env appConfigFilePath 
     updateAppSetting "Version" version appConfigFilePath
-    Fake.TraceHelper.log ("--------------- Finished Preparing the Build ---------------")
 )
 
 Target "build" (fun () ->
