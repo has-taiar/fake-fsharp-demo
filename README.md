@@ -14,7 +14,9 @@ To run it:
 This will trigger the following targets:
 
 > Clean
+
 > Prepare (to transform app.config file)
+
 > Build
 
 Obviously, you can give it whatever version and env name and it will transform your app.config for you. 

@@ -6,6 +6,7 @@
 [Bb]in/
 packages/
 TestResults/
+.fake/
 
 # globs
 Makefile.in
@@ -31,6 +32,8 @@ Thumbs.db
 # Mac bundle stuff
 *.dmg
 *.app
+
+
 
 # resharper
 *_Resharper.*
